@@ -265,15 +265,6 @@ Conclusão: Capacidade sustentável antes de degradação severa <300 VUs para o
 - Indicadores de ruptura: aumento abrupto p99, taxa de erros >90%, queda em respostas 201.
 - Recomendações: otimização de função de criptografia, paralelização ou offloading; considerar escalabilidade horizontal; definir limites operacionais formais.
 
-### 11.7 Recomendações Técnicas
-
-- Profiling de CPU para identificar hotspots da função de hash.
-- Avaliar uso de workers ou fila assíncrona para descarregar operações pesadas.
-- Introduzir métricas de infraestrutura (CPU%, load average) em correlação com p95/p99.
-- Definir SLOs: ex. p95<300 ms até 50 VUs (normal); p95<350 ms em picos até 300 VUs (flash sale).
-
-## 12. Boas Práticas
-
 ## 12. Boas Práticas
 
 - Isolar o ambiente (não executar outros processos pesados durante testes).
