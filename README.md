@@ -265,19 +265,9 @@ Critérios típicos:
 - Indicadores de ruptura: aumento abrupto p99, taxa de erros >90%, queda em respostas 201.
 - Recomendações: otimização de função de criptografia, paralelização ou offloading; considerar escalabilidade horizontal; definir limites operacionais formais.
 
-## 12. Boas Práticas
+## 12. Observações
 
-- Isolar o ambiente (não executar outros processos pesados durante testes).
-- Repetir cenários para validar consistência.
-- Versionar scripts de teste (controle de mudanças + reprodutibilidade).
-- Separar parâmetros (endpoints, payloads) em constantes para facilitar ajuste.
-
-## 13. Extensões Futuras (Opcional)
-
-- Teste de Resistência (Soak): 30–60 min a carga moderada para avaliar estabilidade e possíveis vazamentos.
-- Integração com Prometheus/Grafana para dashboards contínuos.
-- Automação em pipeline CI: executar smoke em cada deploy e publicar relatório.
-- Exportação de métricas em formato JSON para análise posterior.
+Para garantir resultados confiáveis e reprodutíveis, recomenda-se isolar o ambiente de execução, evitando a execução de outros processos pesados durante os testes, bem como repetir os cenários para validar a consistência dos resultados obtidos. Além disso, é importante versionar os scripts de teste, assegurando controle de mudanças e reprodutibilidade, e manter parâmetros como endpoints e payloads separados em constantes, de forma a facilitar ajustes, manutenção e evolução dos testes.
 
 ## 14. Referências
 
